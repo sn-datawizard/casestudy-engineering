@@ -73,14 +73,14 @@ resource "azurerm_data_factory_linked_service_data_lake_storage_gen2" "amazinget
 }
 
 resource "azurerm_data_factory_linked_service_data_lake_storage_gen2" "amazingetl-linkedservice-silver" {
-  name                  = "ls-bronze-amazingetl"
+  name                  = "ls-silver-amazingetl"
   data_factory_id       = azurerm_data_factory.amazingetl-datafactory.id
   storage_account_key   = azurerm_storage_data_lake_gen2_filesystem.amazingetl-datalake-silver.storage_account_id
   url                   = "https://datalakestoragegen2"
 }
 
 resource "azurerm_data_factory_linked_service_data_lake_storage_gen2" "amazingetl-linkedservice-gold" {
-  name                  = "ls-bronze-amazingetl"
+  name                  = "ls-gold-amazingetl"
   data_factory_id       = azurerm_data_factory.amazingetl-datafactory.id
   storage_account_key   = azurerm_storage_data_lake_gen2_filesystem.amazingetl-datalake-gold.storage_account_id
   url                   = "https://datalakestoragegen2"
