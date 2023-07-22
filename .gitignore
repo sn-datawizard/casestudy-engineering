@@ -1,0 +1,7 @@
+/*.txt
+/*.tfstate
+/*.tfstate.backup
+/*.lock.hcl
+/*.tfvars
+/.terraform
+/.env
