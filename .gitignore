@@ -5,3 +5,5 @@
 /*.tfvars
 /.terraform
 /.env
+__pycache__/
+/config.py
