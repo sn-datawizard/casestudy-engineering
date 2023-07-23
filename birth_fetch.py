@@ -3,6 +3,7 @@ import config
 import pandas as pd
 import time
 
+start_time = time.time()
 #Set login parameter
 USERNAME = config.username
 PASSWORD = config.password

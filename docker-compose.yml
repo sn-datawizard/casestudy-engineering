@@ -1,0 +1,19 @@
+version: '3'
+services:
+  migration:
+    build:
+      context: .
+      dockerfile: Migration.Dockerfile
+    image: stefannikesh/casestudy-engineering:migration
+
+  birth:
+    build:
+      context: .
+      dockerfile: Birth.Dockerfile
+    image: stefannikesh/casestudy-engineering:birth
+
+  population:
+    build:
+      context: .
+      dockerfile: Population.Dockerfile
+    image: stefannikesh/casestudy-engineering:population

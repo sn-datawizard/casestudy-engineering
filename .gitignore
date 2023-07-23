@@ -1,9 +1,9 @@
-/*.txt
-/*.tfstate
-/*.tfstate.backup
-/*.lock.hcl
-/*.tfvars
-/.terraform
+Terraform/*.tfstate
+Terraform/*.tfstate.backup
+Terraform/*.lock.hcl
+Terraform/*.tfvars
+Terraform/.terraform
+/*.terraform
 /.env
 __pycache__/
 /config.py

@@ -13,4 +13,3 @@ def fetch_data(username, password, tablename, startyear, endyear):
 
 def upload_data(df, storagecontainer, filename, connection):
     df.to_csv(f'abfs://{storagecontainer}/{filename}', storage_options = {'connection_string' : connection}, sep=';', index=False)
-
