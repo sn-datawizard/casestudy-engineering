@@ -17,3 +17,9 @@ services:
       context: .
       dockerfile: Population.Dockerfile
     image: stefannikesh/casestudy-engineering:population
+
+  transform:
+    build:
+      context: .
+      dockerfile: Transform.Dockerfile
+    image: stefannikesh/casestudy-engineering:transform

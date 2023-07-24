@@ -3,6 +3,8 @@ import config
 import pandas as pd
 import time
 
+
+time.sleep(15)
 start_time = time.time()
 # Read data from Data Lake
 conx_string = config.connection_string
@@ -29,17 +31,17 @@ final_df['Migration'].fillna(0, inplace=True)
 
 # Upload dataframe to Silver Data Lake
 helper.upload_data(final_df, 'silver-dlscontainer-amazingetl', 'data.csv', conx_string)
-
+time.sleep(15)
 
 # Read csv file from Silver Data Lake
 silver_df = pd.read_csv(f'abfs://silver-dlscontainer-amazingetl/data.csv', storage_options = {'connection_string' : conx_string}, sep=';', index_col=False)
-print(silver_df.head(5))
+#print(silver_df.head(5))
 
 df = silver_df[['Year', 'Population']]
-print(df.head(5))
+#print(df.head(5))
 
 df['YoYChangePercentage'] = df['Population'].pct_change()
-print(df.head(5))
+#print(df.head(5))
 
 helper.upload_data(df, 'gold-dlscontainer-amazingetl', 'enriched_data.csv', conx_string)
 
