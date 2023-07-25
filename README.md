@@ -84,8 +84,8 @@ All scripts convert the JSON response to multiple lists which then will create a
 ### Data transformation
 The Python script transform.py is reading and cleaning data from Azure Data Lake (Bronze Layer) and uploads the cleaned dataset to Silver Layer. The following transformation are performed:
 - Convert integer values from column 'Year' into actual dates and assign date data type with pandas datetime function
-- Fill NaN values with custom values (NONE for non-integer and non-float values, 0 for integer and float values) to ensure no error when do calculations and aggregations
 - JOIN data frames
+- Fill NaN values with custom values (NONE for non-integer and non-float values, 0 for integer and float values) to ensure no error when do calculations and aggregations
 
 Furthermore transform.py is reading data from Azure Data lake (Silver Layer) and uploads the enriched dataset to Gold Layer to be used by Data Scientists. The following enrichtments are performed:
 - Select required columns 'Year' and 'Population'
