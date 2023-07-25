@@ -41,7 +41,7 @@ https://www-genesis.destatis.de/genesis/online
 #### Python Docker Applications to fetch and process data
 - Own configuration​
 - Fast deployment possible​
-- Proper testing possible as Docker runs as new environment​
+- Proper testing possible as Docker runs as isolated environment​
   
 #### Kubernetes for Docker deployment
 - Smooth development process​
