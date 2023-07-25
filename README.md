@@ -104,15 +104,16 @@ The containers will not restart.
 
 ## Testing & Monitoring
 ### Testing
+Several tests are performed to ensure a successful run of the data pipeline and a correct dataset.
 #### Test case 1: ​
 Run containers and check logs for successful run​
-Check 'Modified' datetime in storage containers to see if successful run​
+Check 'Modified' datetime in storage containers to see if run successful
 
 #### Test case 2:​
 Run Docker image locally to validate successful run on different machines​
 
 #### Test case 3:​
-Download data in Gold Layer storage container and validate successful transformations
+Download data in Gold Layer storage container, validate and review successful transformations
 
 ### Monitoring
 Kubernetes logs is used for monitoring
