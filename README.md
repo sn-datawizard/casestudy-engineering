@@ -45,8 +45,8 @@ https://www-genesis.destatis.de/genesis/online
   
 #### Kubernetes for Docker deployment
 - Smooth development process​
-- Easy configuration for orchestration of Python applications​
-- Easy deployment and scaling with Kubernetes
+- Custom configuration for orchestration of Python applications​
+- Fast deployment and scaling with Kubernetes
 - Logging
 
 
