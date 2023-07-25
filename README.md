@@ -1,5 +1,12 @@
 # Proof of Concept (PoC) Data Engineering
 
+## Summary
+The Proof of Concept (PoC) follows industry best practices, implementing a three-layer Azure Data Lake for efficient data storage. Python Docker Applications are chosen for data fetching and processing, offering a smooth development and deployment process with custom configurations. Kubernetes is utilized for Docker deployment, providing smooth orchestration. ​<br>
+
+The PoC's expectations include successful execution of the data pipeline, Terraform-based infrastructure creation, and sequential updates to the Data Lake. The architecture can be extended with additional data sources, showcasing a future-proof solution. ​<br>
+
+Overall, the PoC demonstrates a seamless integration of technologies for a reliable data engineering pipeline.
+
 ## Use Case
 The population of Germany experience continiuous growth with each passing year. 
 This has impact on various aspects like rent prices, public transport systems and the retirement system.
