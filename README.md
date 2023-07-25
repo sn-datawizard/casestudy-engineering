@@ -4,7 +4,7 @@
 The population of Germany experience continiuous growth with each passing year. 
 This has impact on various aspects like rent prices, public transport systems and the retirement system.
 To project the population's growth in the coming years, relevant data is required to develop predictive models.​ <br><br>
-In order to enhance the precision of the developed model, more data sources will be connected to the data pipeline in future. <br>
+In order to enhance the precision of the developed model, more data sources will be integrated to the data pipeline in future. <br>
 
 ### Milestone
 Provide population data and data related to population growth in Germany to Data Scientists.
