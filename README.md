@@ -28,7 +28,8 @@ https://www-genesis.destatis.de/genesis/online
 
 ## High Level Design Architecture
 ### Architecture Diagram
-![HH-Design Architecture](https://github.com/sn-datawizard/casestudy-engineering/assets/77932366/ba443866-2364-4971-b8db-0f8f588a8c51)
+![HH-Design Architecture](https://github.com/sn-datawizard/casestudy-engineering/assets/77932366/4cf0778f-1837-4150-b669-10cc9f76f3f9)
+
 
 
 ## Architecture Requirements & Design Decisions
@@ -113,14 +114,19 @@ The containers will not restart.
 ### Testing
 Several tests are performed to ensure a successful run of the data pipeline and a correct dataset.
 #### Test case 1: ​
-Run containers and check logs for successful run​
-Check 'Modified' datetime in storage containers to see if run successful
+- Run containers with Kubernetes and check logs​
+- Check 'Modified' datetime in storage containers​
+Expected result: Successful run without errors, Date modified changed
 
 #### Test case 2:​
-Run Docker image locally to validate successful run on different machines​
+- Run Docker image locally to validate successful run on different machines​
+Expected result: Successful run without errors
 
 #### Test case 3:​
-Download data in Gold Layer storage container, validate and review successful transformations
+- Download data in Gold Layer storage container and validate data
+Expected result: Transformations are applied to final data set
 
 ### Monitoring
 Kubernetes logs is used for monitoring
+
+
